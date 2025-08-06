@@ -17,9 +17,7 @@ public class LoginTest extends BasePage{
 		//loginPage.enterAccessCode();
 		loginPage.enterEmail();
 		loginPage.enterPassword();
-		loginPage.clickOnLoginButton();
-		
-		
+		loginPage.clickOnLoginButton();	
 	}
 	
 	

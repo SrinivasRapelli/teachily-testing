@@ -7,13 +7,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BasePage {
 	public static WebDriver driver;
 
 	@BeforeSuite
 	public void openWebsite() {
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\srini\\TeachilyProject\\TeachilyWebsite\\drivers\\chromedriver.exe");
-				driver = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\srini\\TeachilyProject\\TeachilyWebsite\\drivers\\chromedriver.exe");   //for running the code locally
+				//driver = new FirefoxDriver();
+				
+				WebDriverManager.chromedriver().setup();   //for runnning the code remotely
+				driver = new ChromeDriver();
 				driver.get("https://www.teachily.co.uk/");
 				driver.manage().window().maximize();
 				System.out.println(driver.getTitle());
