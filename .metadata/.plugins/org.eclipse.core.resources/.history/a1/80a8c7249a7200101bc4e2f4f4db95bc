@@ -1,0 +1,23 @@
+package com.teachily.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	WebDriver driver;
+	
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By loginLink = By.xpath("//*[text()='Log in']");
+	By loginasSchoolmember = By.xpath("//*[text()='Login as School Membership']");
+	
+	public void navigateToLoginPage() throws InterruptedException {
+		driver.findElement(loginLink).click();
+	
+		driver.findElement(loginasSchoolmember).click();
+		Thread.sleep(4000);
+
+	}
+}

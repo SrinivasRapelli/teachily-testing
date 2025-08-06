@@ -1,0 +1,16 @@
+package com.teachily.tests;
+
+import com.teachily.pages.BasePage;
+import com.teachily.pages.LoginPage;
+
+public class LoginTest extends BasePage{
+
+	LoginPage loginPage;
+	
+	public void loginToTheWebsite() {
+		loginPage = new LoginPage(driver);
+		loginPage.navigateToLoginPage();
+	}
+	
+	
+}

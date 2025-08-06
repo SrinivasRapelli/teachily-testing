@@ -1,0 +1,27 @@
+package com.teachily.pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ResourcesPage {
+	
+	WebDriver driver;
+	
+	public ResourcesPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By resourcesLink = By.xpath("//*[text()='Resources']");
+	
+	public void clickOnResourcesLink() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(resourcesLink));
+		element.click();
+		Thread.sleep(4000);
+	}
+}

@@ -1,0 +1,51 @@
+package com.teachily.pages;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ResourcesPage {
+	
+	WebDriver driver;
+	
+	public ResourcesPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By resourcesLink = By.xpath("//*[text()='Resources']");
+	By subject = By.xpath("//*[@id = \"subject-select\"]");
+	By ks = By.xpath("//*[@id=\"keyStage-select\"]");
+	By curriculum = By.xpath("//*[@id='curriculum-select']");
+	By goButton = By.xpath("//*[text()='Go']");
+	
+	public void clickOnResourcesLink() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(resourcesLink));
+		element.click();
+		Thread.sleep(4000);
+	}
+	
+	public void selectSubject() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(subject));
+		Select select = new Select(element);
+		select.selectByVisibleText("Geography");
+		Thread.sleep(2000);
+	}
+	
+	public void selectKeyStage() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(subject));
+		Select select = new Select(element);
+		select.selectByIndex(0);
+		Thread.sleep(2000);
+	}
+	
+	
+	
+}

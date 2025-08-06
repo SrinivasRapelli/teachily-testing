@@ -1,0 +1,21 @@
+package com.teachily.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	WebDriver driver;
+	
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By loginLink = By.xpath("//*[text()='Log in']");
+	
+	
+	public void navigateToLoginPage() {
+		driver.findElement(loginLink).click();
+		Thread.sleep(4000);
+
+	}
+}

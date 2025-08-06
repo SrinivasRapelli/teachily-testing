@@ -1,0 +1,23 @@
+package com.teachily.tests;
+
+import org.testng.annotations.Test;
+
+import com.teachily.pages.BasePage;
+import com.teachily.pages.ResourcesPage;
+
+public class ResourcesTest extends BasePage {
+	ResourcesPage resourcesPage;
+	
+	@Test
+	public void testResourcesDeatiledPage() throws InterruptedException {
+		resourcesPage = new  ResourcesPage(driver);
+		resourcesPage.clickOnResourcesLink();
+		resourcesPage.selectSubject();
+		resourcesPage.selectKeyStage();
+		resourcesPage.selectCurriculum();
+		resourcesPage.clickOnGoButton();
+		resourcesPage.selectAResource();
+		resourcesPage.openAResource();
+		resourcesPage.readTheDescriptionOfResource();
+	}
+}

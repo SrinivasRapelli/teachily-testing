@@ -1,0 +1,15 @@
+package com.teachily.tests;
+
+import com.teachily.pages.BasePage;
+import com.teachily.pages.ResourcesPage;
+
+public class ResourcesTest extends BasePage {
+	ResourcesPage resourcesPage;
+	
+	
+	public void testResourcesDeatiledPage() {
+		resourcesPage = new  ResourcesPage(driver);
+		resourcesPage.clickOnResourcesLink();
+		
+	}
+}
