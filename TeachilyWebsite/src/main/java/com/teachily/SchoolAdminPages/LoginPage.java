@@ -1,4 +1,4 @@
-package com.teachily.pages;
+package com.teachily.SchoolAdminPages;
 
 import java.time.Duration;
 
@@ -48,7 +48,7 @@ public class LoginPage {
 	public void enterEmail() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(email));
-		element.sendKeys("sreenmaahi@gmail.com");
+		element.sendKeys("srinivasrapelli888@gmail.com");
 	}
 	public void enterPassword() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));

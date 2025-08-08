@@ -1,9 +1,9 @@
-package com.teachily.tests;
+package com.teachily.SchoolAdminTests;
 
 import org.testng.annotations.Test;
 
+import com.teachily.SchoolAdminPages.LoginPage;
 import com.teachily.pages.BasePage;
-import com.teachily.pages.LoginPage;
 
 public class LoginTest extends BasePage{
 

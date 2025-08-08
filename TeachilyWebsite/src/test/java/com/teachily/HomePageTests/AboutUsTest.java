@@ -1,4 +1,4 @@
-package com.teachily.tests;
+package com.teachily.HomePageTests;
 
 import org.testng.annotations.Test;
 

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-06T18:46:20 IST" name="Default suite" finished-at="2025-08-06T18:46:22 IST" duration-ms="1535">
+  <suite started-at="2025-08-08T14:21:00 IST" name="Default suite" finished-at="2025-08-08T14:21:11 IST" duration-ms="11515">
     <groups>
     </groups>
-    <test started-at="2025-08-06T18:46:20 IST" name="Default test" finished-at="2025-08-06T18:46:22 IST" duration-ms="1535">
-      <class name="com.teachily.tests.LoginTest">
-        <test-method is-config="true" signature="openWebsite()[pri:0, instance:com.teachily.tests.LoginTest@4135c3b]" started-at="2025-08-06T18:46:17 IST" name="openWebsite" finished-at="2025-08-06T18:46:20 IST" duration-ms="3465" status="PASS">
+    <test started-at="2025-08-08T14:21:00 IST" name="Default test" finished-at="2025-08-08T14:21:11 IST" duration-ms="11515">
+      <class name="com.teachily.SchoolAdminTests.StudentsTest">
+        <test-method is-config="true" signature="openWebsite()[pri:0, instance:com.teachily.SchoolAdminTests.StudentsTest@4135c3b]" started-at="2025-08-08T14:20:56 IST" name="openWebsite" finished-at="2025-08-08T14:21:00 IST" duration-ms="3458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebsite -->
-        <test-method signature="loginAsAdmin()[pri:0, instance:com.teachily.tests.LoginTest@4135c3b]" started-at="2025-08-06T18:46:20 IST" name="loginAsAdmin" finished-at="2025-08-06T18:46:22 IST" duration-ms="1517" status="PASS">
+        <test-method signature="addANewStudent()[pri:0, instance:com.teachily.SchoolAdminTests.StudentsTest@4135c3b]" started-at="2025-08-08T14:21:00 IST" name="addANewStudent" finished-at="2025-08-08T14:21:11 IST" duration-ms="11475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsAdmin -->
-        <test-method is-config="true" signature="closeWebsite()[pri:0, instance:com.teachily.tests.LoginTest@4135c3b]" started-at="2025-08-06T18:46:22 IST" name="closeWebsite" finished-at="2025-08-06T18:46:27 IST" duration-ms="5248" status="PASS">
+        </test-method> <!-- addANewStudent -->
+        <test-method is-config="true" signature="closeWebsite()[pri:0, instance:com.teachily.SchoolAdminTests.StudentsTest@4135c3b]" started-at="2025-08-08T14:21:11 IST" name="closeWebsite" finished-at="2025-08-08T14:21:16 IST" duration-ms="5372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWebsite -->
-      </class> <!-- com.teachily.tests.LoginTest -->
+      </class> <!-- com.teachily.SchoolAdminTests.StudentsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

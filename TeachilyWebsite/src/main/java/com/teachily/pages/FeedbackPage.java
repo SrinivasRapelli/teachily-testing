@@ -71,7 +71,7 @@ public class FeedbackPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(successmessage));
 		String successmsg= element.getText();
-		Assert.assertEquals("Thank you for your feedback!", successmsg);
+		Assert.assertEquals(successmsg,"Thank you for your feedback!");
 		System.out.println(successmsg);
 		
 	}
