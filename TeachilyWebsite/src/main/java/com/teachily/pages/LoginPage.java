@@ -1,4 +1,4 @@
-package com.teachily.SchoolAdminPages;
+package com.teachily.pages;
 
 import java.time.Duration;
 
@@ -25,7 +25,7 @@ public class LoginPage {
 	By loginButton = By.xpath("//button[text()='Login']");
 	
 	
-	public void navigateToLoginPage() throws InterruptedException {
+	public void navigateToLoginPage()  {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(loginLink));
 		element.click();
@@ -33,27 +33,71 @@ public class LoginPage {
 		element1.click();
 	}
 	
-	public void selectTheRole() {
+	public void selectTheRoleAsAdmin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(selectRole));
 		Select select = new Select(element);
 		select.selectByVisibleText("Admin");
 	}
 	
-	public void enterAccessCode() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(accesscode));
-		element.sendKeys("0000");
-	}
-	public void enterEmail() {
+	public void enterAdminEmail() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(email));
 		element.sendKeys("srinivasrapelli888@gmail.com");
 	}
-	public void enterPassword() {
+	
+	public void enterAdminPassword() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(password));
 		element.sendKeys("Sr@12345");
+	}
+	
+	public void enterAccessCode() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(accesscode));
+		element.sendKeys("9da2");
+	}
+	
+
+	
+	public void enterTeacherEmail() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(email));
+		element.sendKeys("srini@gmail.com");
+	}
+	
+	
+	public void selectTheRoleAsTeacher() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(selectRole));
+		Select select = new Select(element);
+		select.selectByVisibleText("Teacher");
+	}
+	
+	public void selectTheRoleAsStudent() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(selectRole));
+		Select select = new Select(element);
+		select.selectByVisibleText("Student");
+	}
+
+	public void enterStudentEmail() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(email));
+		element.sendKeys("ab@gmail.com");
+	}
+	
+	
+	public void enterTeacherPassword() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(password));
+		element.sendKeys("gBFxYGUi");
+	}
+	
+	public void enterStudentPassword() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(password));
+		element.sendKeys("bHaMRP7P");
 	}
 	
 	public void clickOnLoginButton() {

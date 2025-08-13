@@ -2,6 +2,7 @@ package com.teachily.SchoolAdminTests;
 
 import org.testng.annotations.Test;
 
+import com.teachily.HomePageTests.LoginTest;
 import com.teachily.SchoolAdminPages.SchoolInfoPage;
 import com.teachily.pages.BasePage;
 

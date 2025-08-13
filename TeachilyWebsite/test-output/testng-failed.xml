@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.teachily.SchoolAdminTests.TeachersTest">
+      <class name="com.teachily.teacherDashboardTests.ProfileTest">
         <methods>
-          <include name="addANewTeacher"/>
+          <include name="verifyTheTeacherProfilePage"/>
           <include name="closeWebsite"/>
           <include name="openWebsite"/>
         </methods>
-      </class> <!-- com.teachily.SchoolAdminTests.TeachersTest -->
+      </class> <!-- com.teachily.teacherDashboardTests.ProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
